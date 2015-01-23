@@ -36,7 +36,10 @@ $.fn.unEntitle = function(){
 
 $(document).ready(function() {
 
+var footerShift = $(document).height() - $('#wrapper').height() - 126 ;
 
+$('#footer').css('top', "'" + footerShift + "px'");
+console.log("'" + footerShift + "px'");
 
 //FRONTPAGE - search ---------------------------------------------------------------------------------------------
 //      SEARCH       ---------------------------------------------------------------------------------------------
@@ -75,6 +78,7 @@ $(document).ready(function() {
 
 //When a drug is in titlemode and clicked on, this will make the icon transition to a title 
         $('.item-link').click(function(){
+            console.log(footerShift);
             var currentItem = $(this).siblings('ul').children().last().text();
             if ($(this).hasClass('entitled')){
                 $(this).unEntitle();
