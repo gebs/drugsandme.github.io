@@ -95,16 +95,18 @@ body{
 	height: 10em;
 	width: 10em;
 	border-radius: 5em;
-	background: indianred;
 	display: inline-block;
 	margin: 3em 5em 0 0;
 	text-align: center;
 	position: relative;
+	box-shadow: 1px 1px 3px #888888;
+	
 }
 
 .item-text{
 	top: 6em;
 	font-size: 5em;
+	color: white;
 	margin: 0.4em auto;
 }
 
@@ -149,11 +151,44 @@ body{
 	}
 
 	#top-title h2{
-		font-size: 0.5em;
+		font-size: 6em;
 	}
+}
 
-	
 
+/* Button colours! -------------------------------------------------------------*/
+
+.item.cannabis{
+	background: #8CCB00;
+}
+
+.item.cocaine{
+	background: #FA9915;
+}
+
+.item.mdma{
+	background: #00A1CB;
+}
+
+.item.lsd{
+	background: indianred;
+}
+/* Item specific h2 colours ----------------------------------------------------*/
+
+#info.cannabis h2{
+	color: #8CCB00;
+}
+
+#info.cocaine h2{
+	color: #FA9915;
+}
+
+#info.mdma h2{
+	color: #00A1CB;
+}
+
+#info.lsd h2{
+	color: indianred;
 }
 
 /* INFORMATION   ----------------------------------------------------------*/
@@ -177,6 +212,12 @@ body{
 
 #search{
 	position: relative;
+}
+
+#search input{
+	position: relative;
+	box-shadow: 0 0 3px #888888 inset;
+	border-radius: 5px;
 }
 input {
 border: 0;

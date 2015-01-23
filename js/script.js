@@ -3,17 +3,16 @@
 $.fn.entitle = function(){
      var current = $(this).siblings('.item-name').text();
     $(this).addClass('entitled');
-    $('.item').addClass('no-display');
-    $(this).parents().removeClass('no-display');
     $('#top-title').css({'position' : 'relative'});
     $('#top-title').children('h2').replaceWith('<h2 class="item-name">'+ current +' </h2>');
-    $('#item-picker').css({
-        'width': '13em'
-    });
-    $('#item-picker').addClass('hidden-sm hidden-xs');
     var slide = $('#top-title h2').width() + 20 + 'px';
-    $('#top-title').animate({"width" : slide},500,function(){});
-
+    $('#top-title').animate({"width" : slide},{ duration: 500, queue: false});
+    $('#item-picker').animate({'width': '13em'},{ duration: 300, queue: false});
+    $(this).delay(470).queue(function(next){
+        $('.item').addClass('no-display');
+        $(this).parents().removeClass('no-display');
+        next();
+    });
 };
 
 // opposite of entitle
@@ -24,7 +23,7 @@ $.fn.unEntitle = function(){
     $(this).removeClass('entitled');
     $('.item').removeClass('no-display');
     $('#top-title').delay(470).queue(function(next){
-        $('#top-title').children('h2').delay('slow').replaceWith('<h2 class="item-name"></h2>');
+        $('#top-title').children('h2').replaceWith('<h2 class="item-name"></h2>');
         $(this).css('position' ,'absolute');
         next();
     });
@@ -37,8 +36,6 @@ $.fn.unEntitle = function(){
 $(document).ready(function() {
 
 
-    $("#info").load("./information.html"); 
-        
 
 //FRONTPAGE - search ---------------------------------------------------------------------------------------------
 //      SEARCH       ---------------------------------------------------------------------------------------------
@@ -47,7 +44,6 @@ $(document).ready(function() {
         //unentitle item if any is entitled
         if($('.item-link').hasClass('entitled')){
             $('.entitled').unEntitle();
-            console.log($('.entitled'));
         }
 
         $(window).keyup(function(){
@@ -78,10 +74,16 @@ $(document).ready(function() {
 
 //When a drug is in titlemode and clicked on, this will make the icon transition to a title 
         $('.item-link').click(function(){
-            if ($(this).hasClass('entitled'))
+            var currentItem = $(this).siblings('ul').children().last().text();
+            if ($(this).hasClass('entitled')){
                 $(this).unEntitle();
-            else
+                $('#info').removeClass(currentItem);
+            }
+            else{   
                 $(this).entitle();
+                $('#info').load("./" + currentItem + ".html");
+                $('#info').addClass(currentItem);
+            }
         });
 
 
