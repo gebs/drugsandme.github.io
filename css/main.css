@@ -158,6 +158,10 @@ body{
 	#footer{
 		left: -1em;
 	}
+
+	#search.visible-xs{
+		top: 0;
+	}
 }
 
 
@@ -217,12 +221,23 @@ body{
 
 #search{
 	position: relative;
+
+}
+
+#search.visible-xs{
+	top: 2em;
+}
+
+#search i{
+	right: 2em;
 }
 
 #search input{
 	position: relative;
-	box-shadow: 0 0 3px #888888 inset;
-	border-radius: 5px;
+	box-shadow: 0 0 4px #536C6D inset;
+	border-radius: 1em;
+	padding-left: 8px;
+	height: 2em;	
 }
 input {
 border: 0;
@@ -235,6 +250,7 @@ input:focus {
 .tag{
 	display: none;
 }
+
 
 /* Side bar --------------------------------------*/
 
@@ -263,7 +279,7 @@ input:focus {
     position: relative;
     z-index: 10;
     margin-top: 3em;
-    top: 210px;
+    top: 13em;
 
 }
 
@@ -284,4 +300,11 @@ input:focus {
 	padding: 1em 2em 1em 2em;
 	text-decoration: none;
 }
+
+/* Fonts ----------------------------------------------*/
+
+span.icon { 
+  font-family: 'Glyphicons Halflings'; 
+}
+
 
