@@ -235,6 +235,7 @@ input:focus {
 
 #sidebar{
 	text-align: center;
+	position: fixed;
 }
 
 #sidebar h5{
