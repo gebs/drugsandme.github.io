@@ -1,0 +1,210 @@
+
+html{
+	top: 0;
+	width: 100%;
+	background-repeat: repeat;  
+}
+
+body{
+	top: 0;
+	margin: 0;
+}
+
+
+#sidebar{
+	position: absolute;
+	background-color: #272A32;
+	width: 3.5em;
+	height: 100%;
+}
+
+#wrapper{
+	top: 5em;
+	margin: 0;
+	width: 85%;
+	left: 100px;
+	position: relative;
+	overflow: hidden;
+}
+
+ @media (max-width: 480px){
+	#wrapper{
+		top: 5em;
+		margin: 0;
+		width: 91.2%;
+		left: 2em;
+		position: relative;
+		overflow: hidden;
+	}
+	#sidebar{
+		position: absolute;
+		background-color: #272A32;
+		width: 1.5em;
+		height: 100%;
+	}
+}
+
+#welcome{
+	position: relative;
+	margin-top: 0;
+	font-size: 5em;
+	color: pink;
+	top: 0;
+}
+
+#top-title{
+	position: absolute;
+	display: inline;
+	width: 0;
+	overflow: hidden;
+}
+
+#top-title h2{
+	padding-bottom: 0px;
+	font-size: 9em;
+	overflow: hidden;
+	display: inline-block;
+
+}
+
+@media (max-width: 768px){
+	#top-title h2{
+		font-size: 5em;
+	}
+
+}
+
+/* ITEM PICKER ----------------------------------------------------------*/
+
+#item-picker{
+	position: relative;
+	display: inline-block; 
+	width: 100%;   
+	top: 1.3em;
+	height: 16em;  
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+#item-picker::-webkit-scrollbar { 
+    display: none; 
+}
+
+.item{
+	height: 10em;
+	width: 10em;
+	border-radius: 5em;
+	background: indianred;
+	display: inline-block;
+	margin: 3em 5em 0 0;
+	text-align: center;
+	position: relative;
+}
+
+.item-text{
+	top: 6em;
+	font-size: 5em;
+	margin: 0.4em auto;
+}
+
+.item-link{
+	z-index: 2;
+	position: absolute;
+	display: block;
+	height: 10em;
+	width: 10em;
+}
+
+.item-name {
+	padding-top: 0.3em;
+	margin-top: 0;
+}
+
+@media (max-width: 480px){
+	.item {
+		height: 7em;
+		width: 7em;
+		border-radius: 3.5em;
+		background: indianred;
+		display: inline-block;
+		margin: 2em 2em 0 0;
+		text-align: center;
+		position: relative;
+	}
+	.item-link{
+	z-index: 2;
+		position: absolute;
+		display: block;
+		height: 7em;
+		width: 7em;
+	}
+	.item-text{
+		top: 6em;
+		font-size: 3.7em;
+		margin: 0.35em auto;
+	}
+	.item-name{
+		font-size: 1.5em;
+	}
+
+	#top-title h2{
+		font-size: 0.5em;
+	}
+
+	
+
+}
+
+/* INFORMATION   ----------------------------------------------------------*/
+
+#info{
+	margin-top: 3em;
+}
+
+#info object{
+	width: 100%;
+	overflow: auto;
+	height: auto;
+}
+/* SEARCH CLASSES----------------------------------------------*/
+.no-display{
+	display: none;
+}
+.force-display{
+	display: inline-block;
+}
+
+#search{
+	position: relative;
+}
+input {
+border: 0;
+}
+input:focus {
+  border: 0;
+    outline:none;
+}
+
+.tag{
+	display: none;
+}
+
+/* Side bar --------------------------------------*/
+
+#sidebar{
+	text-align: center;
+}
+
+#sidebar h5{
+	color: white;
+	font-size: 1.5em;
+}
+
+#item-sidebar-icons{
+	position: relative;
+	top: 1em;
+}
+
+
+
