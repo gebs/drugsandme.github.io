@@ -27,23 +27,6 @@ body{
 	overflow: hidden;
 }
 
- @media (max-width: 480px){
-	#wrapper{
-		top: 5em;
-		margin: 0;
-		width: 91.2%;
-		left: 2em;
-		position: relative;
-		overflow: hidden;
-	}
-	#sidebar{
-		position: absolute;
-		background-color: #272A32;
-		width: 1.5em;
-		height: 100%;
-	}
-}
-
 #welcome{
 	position: relative;
 	margin-top: 0;
@@ -70,6 +53,7 @@ body{
 @media (max-width: 768px){
 	#top-title h2{
 		font-size: 5em;
+		height: 2em;
 	}
 
 }
@@ -123,7 +107,21 @@ body{
 	margin-top: 0;
 }
 
+/* iPhone specific------------------------------------------------------------------*/
+
 @media (max-width: 480px){
+
+	#wrapper{
+		top: 5em;
+		margin: 0;
+		width: 91.2%;
+		left: 2em;
+		position: relative;
+		overflow: hidden;
+	}
+	#sidebar{
+		width: 1.5em;
+	}
 	.item {
 		height: 7em;
 		width: 7em;
@@ -149,10 +147,11 @@ body{
 	.item-name{
 		font-size: 1.5em;
 	}
-
-	#top-title h2{
-		font-size: 6em;
+	#top-title h2 {
+		font-size: 5em;
+		height: 1.3em;
 	}
+
 }
 
 
@@ -236,6 +235,7 @@ input:focus {
 #sidebar{
 	text-align: center;
 	position: fixed;
+	height: 150%;
 }
 
 #sidebar h5{
