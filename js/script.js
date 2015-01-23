@@ -13,16 +13,17 @@ $.fn.entitle = function(){
         $(this).parents().removeClass('no-display');
         next();
     });
+    $('#item-picker').addClass('hidden-sm hidden-xs');
 };
 
 // opposite of entitle
 $.fn.unEntitle = function(){
-    $('#item-picker').removeClass('hidden-sm hidden-xs');
     $('#top-title').animate({"width" : 0},{duration: 500, queue: false});
     $('#item-picker').animate({'width': '100%'},{duration: 500, queue: false});
     $(this).removeClass('entitled');
     $('.item').removeClass('no-display');
     $('#top-title').delay(470).queue(function(next){
+        $('#item-picker').removeClass('hidden-sm hidden-xs');
         $('#top-title').children('h2').replaceWith('<h2 class="item-name"></h2>');
         $(this).css('position' ,'absolute');
         next();
