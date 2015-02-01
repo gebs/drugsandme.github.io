@@ -40,7 +40,7 @@ body{
 
 #top-title{
 	position: absolute;
-	display: inline;
+	display: inline-block;
 	width: 0;
 	overflow: hidden;
 }

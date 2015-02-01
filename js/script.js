@@ -98,6 +98,7 @@ else
 
 
         $('#top-title').click(function() {
+            $('#info').removeClass();
             $('.entitled').unEntitle();
         });
 
