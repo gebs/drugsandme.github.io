@@ -3,15 +3,17 @@
 $.fn.entitle = function(){
      var current = $(this).siblings('.item-name').text();
     $(this).addClass('entitled');
-    $('#top-title').css({'position' : 'relative'});
     $('#top-title').children('h2').replaceWith('<h2 class="item-name">'+ current +' </h2>');
+    $('#top-title').css({'position' : 'relative'});
     var slide = $('#top-title h2').width() + 20 + 'px';
     $('#top-title').animate({"width" : slide},{ duration: 500, queue: false});
     $('#item-picker').animate({'width': '13em'},{ duration: 300, queue: false});
+    
     $(this).delay(470).queue(function(next){
         $('.item').addClass('no-display');
         $(this).parents().removeClass('no-display');
         next();
+
     });
     $('#item-picker').addClass('hidden-sm hidden-xs');
 };
@@ -24,8 +26,8 @@ $.fn.unEntitle = function(){
     $('.item').removeClass('no-display');
     $('#top-title').delay(470).queue(function(next){
         $('#item-picker').removeClass('hidden-sm hidden-xs');
-        $('#top-title').children('h2').replaceWith('<h2 class="item-name"></h2>');
         $(this).css('position' ,'absolute');
+        //$('#top-title').children('h2').replaceWith('<h2 class="item-name"></h2>');
         next();
     });
         
@@ -80,7 +82,7 @@ else
     });
 
 
-//When a drug is in titlemode and clicked on, this will make the icon transition to a title 
+//When a drug is in titlemode and clicked on, this will make the icon transition to a title  +  loads corresponding html into info
         $('.item-link').click(function(){
             var currentItem = $(this).siblings('ul').children().last().text();
             if ($(this).hasClass('entitled')){
@@ -102,7 +104,7 @@ else
 
         var titleWidth = $('#top-title h2').width() + 205;
         var wrapperWidth = $('#wrapper').width();
-        
+
         if (titleWidth >= wrapperWidth) {
             console.log('too small');
             console.log(titleWidth + ", " + wrapperWidth);
