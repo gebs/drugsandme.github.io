@@ -279,15 +279,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3284,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/main.css",
-			"settings":
-			{
-				"buffer_size": 4079,
+				"buffer_size": 3553,
 				"line_ending": "Unix"
 			}
 		},
@@ -303,7 +295,15 @@
 			"file": "js/script.js",
 			"settings":
 			{
-				"buffer_size": 3941,
+				"buffer_size": 4017,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 4085,
 				"line_ending": "Unix"
 			}
 		},
@@ -399,6 +399,7 @@
 	},
 	"file_history":
 	[
+		"/Users/Gab/Dropbox/Projects/Webs/Drugs-3.0-priv/public/css/main.css",
 		"/Users/Gab/Dropbox/Drugs-3.0/css/bootstrap.css",
 		"/Users/Gab/Dropbox/Projects/Webs/Drugs-3.0-priv/public/mdma.html",
 		"/Users/Gab/Dropbox/Projects/Webs/Drugs-3.0-priv/public/lsd.html",
@@ -528,7 +529,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -537,15 +538,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3284,
+						"buffer_size": 3553,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2712,
-								2718
+								551,
+								551
 							]
 						],
 						"settings":
@@ -554,43 +555,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 418.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4079,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2280,
-								2280
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1880.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "cocaine.html",
 					"semi_transient": false,
 					"settings":
@@ -608,30 +580,32 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "js/script.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3941,
+						"buffer_size": 4017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2997,
-								2997
+								1356,
+								1356
 							]
 						],
 						"settings":
@@ -641,10 +615,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 538.0,
+						"translation.y": 587.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								465,
+								465
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
