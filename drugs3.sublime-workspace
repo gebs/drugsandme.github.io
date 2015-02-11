@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"border",
+				"border-radius"
+			],
+			[
 				"re",
 				"replaceWith	.replaceWith()"
 			],
@@ -14,10 +18,6 @@
 			[
 				"css",
 				"css	.css() - single"
-			],
-			[
-				"border",
-				"border-width"
 			],
 			[
 				"in",
@@ -279,7 +279,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3553,
+				"buffer_size": 3813,
 				"line_ending": "Unix"
 			}
 		},
@@ -295,7 +295,7 @@
 			"file": "js/script.js",
 			"settings":
 			{
-				"buffer_size": 4017,
+				"buffer_size": 4335,
 				"line_ending": "Unix"
 			}
 		},
@@ -538,15 +538,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3553,
+						"buffer_size": 3813,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								551,
-								551
+								3132,
+								3132
 							]
 						],
 						"settings":
@@ -555,7 +555,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 489.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -597,15 +597,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4017,
+						"buffer_size": 4335,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1356,
-								1356
+								316,
+								316
 							]
 						],
 						"settings":
@@ -615,7 +615,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 587.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -634,8 +634,8 @@
 						"selection":
 						[
 							[
-								465,
-								465
+								3968,
+								3968
 							]
 						],
 						"settings":
@@ -644,7 +644,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3339.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
