@@ -101,6 +101,7 @@ else
             if ($(this).hasClass('entitled')){
                 $(this).unEntitle();
                 $('#info').removeClass(currentItem);
+                $('#info').empty();
             }
             else{   
                 $(this).entitle();
@@ -113,6 +114,12 @@ else
         $('#top-title').click(function() {
             $('#info').removeClass();
             $('.entitled').unEntitle();
+            $('#info').empty();
+        });
+        $('#welcome').click(function() {
+            $('#info').removeClass();
+            $('.entitled').unEntitle();
+            $('#info').empty();
         });
 
 
