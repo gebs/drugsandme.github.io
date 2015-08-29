@@ -110,7 +110,7 @@ body{
 	margin-top: 0;
 }
 
-/* iPhone specific------------------------------------------------------------------*/
+/* iPhnill specific------------------------------------------------------------------*/
 
 @media (max-width: 480px){
 
@@ -164,43 +164,43 @@ body{
 
 /* Button colours! -------------------------------------------------------------*/
 
-.item.cannabis{
+.item.nill{
 	background: #8CCB00;
 }
 
-.item.cocaine{
+.item.one{
 	background: #FA9915;
 }
 
-.item.mdma{
+.item.two{
 	background: #00A1CB;
 }
 
-.item.lsd{
+.item.three{
 	background: indianred;
 }
-.item.alcohol{
+.item.four{
 	background: #87318C;
 }
 /* Item specific h2 colours ----------------------------------------------------*/
 
-#info.cannabis h2{
+#info.nill h2{
 	color: #8CCB00;
 }
 
-#info.cocaine h2{
+#info.one h2{
 	color: #FA9915;
 }
 
-#info.mdma h2{
+#info.two h2{
 	color: #00A1CB;
 }
 
-#info.lsd h2{
+#info.three h2{
 	color: indianred;
 }
 
-#info.alcohol h2{
+#info.four h2{
 	color: #87318C;
 }
 
